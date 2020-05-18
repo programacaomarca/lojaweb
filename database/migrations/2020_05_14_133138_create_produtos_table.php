@@ -17,7 +17,7 @@ class CreateProdutosTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('categoria_id');           
             $table->string('titulo_produto');
-            $table->decimal('preco', 6,2)->default(0);
+            $table->double('preco', 6,2)->default(0);
             $table->string('autor')->nullable($value = true);
             $table->string('duracao', 20);
             $table->text('desricao');
